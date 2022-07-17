@@ -12,10 +12,14 @@ import {useContext } from "react";
 import Contact from "./Components/Contact/Contact";
 
 function App() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    // const theme = useContext(themeContext)
-    // const darkMode = theme.state.darkMode;
-    <div className="App">
+    <div className="App"
+      style={{
+        background : darkMode ? 'black': '',
+        color : darkMode ? 'white': '',
+      }}>
       <Navbar/>
       <Intro/>
       <About/>
