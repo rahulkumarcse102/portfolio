@@ -7,8 +7,10 @@ import Card from '../Card/Card';
 import Resume from './Resume.pdf';
 import { themeContext } from '../../Context';
 import {useContext } from "react";
+import {motion} from 'framer-motion';
 
 const About = () => {
+    const transition = {duration: 1, type : 'spring'}
     const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -29,29 +31,41 @@ const About = () => {
         </div>
         {/* right side */}
         <div className="cards">
-            <div style={{left: '14rem'}}>
+            <motion.div 
+            whileInView={{left : '14rem'}}
+            initial={{left: '25%'}}
+            transition={transition}
+            style={{left: '14rem'}}>
                 <Card
                 emoji ={HeartEmoji}
                 heading ={'Backend'}
                 detail ={"MySQL, NodeJs, Oracle, Database Management System"}
                 />
-            </div>
+            </motion.div>
             {/* second card */}
-            <div style={{top: "10rem", left: "30rem"}}>
+            <motion.div
+            whileInView={{top: '10rem', left : '30rem'}}
+            initial={{left: '25%'}}
+            transition={transition}
+            style={{top: "10rem", left: "30rem"}}>
                 <Card
                     emoji={Glasses}
                     heading={"Frontend"}
                     detail={"Html, Css, JavaScript, React"}
                 />
-            </div>
+            </motion.div>
             {/* third card */}
-            <div style={{top: "19rem", left: "5rem"}}>
+            <motion.div
+            whileInView={{top: '19rem',left : '5rem'}}
+            initial={{left: '25%'}}
+            transition={transition}
+            style={{top: "19rem", left: "5rem"}}>
                 <Card
                     emoji={Humble}
                     heading={"Programmer"}
                     detail={"C++, Java, C, Python, C#"}
                 />
-            </div>
+            </motion.div>
             <div className="blur a-blur2" style={{background: "var(--purple)"}}></div>
         </div>
     </div>
