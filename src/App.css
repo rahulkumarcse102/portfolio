@@ -12,9 +12,12 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: -24px;
     overflow: hidden;
-    color: var(--black);    
+    color: var(--black);
+        
 }
 
 .button{
@@ -34,4 +37,9 @@
     border: 1px solid var(--orange);
  } 
 
+ @media screen and (max-width: 480px){
+    .App{
+      padding: 0.5rem 1rem;
+    }
+ }
   

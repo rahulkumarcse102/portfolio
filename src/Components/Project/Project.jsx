@@ -13,7 +13,7 @@ const Project = () => {
     const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="project">
+    <div className="project" id = 'Projects'>
         {/* Recent Projects */}
         <span style={{color: darkMode ? 'white': ''}}>Recent Projects </span>
         <span>Portfolio</span>

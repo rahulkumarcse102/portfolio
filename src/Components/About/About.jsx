@@ -14,7 +14,7 @@ const About = () => {
     const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="about">
+    <div className="about" id='About'>
         {/* left side */}
         <div className="awesome">
             <span style={{color: darkMode ? 'white': ''}}>My Awesome </span>
@@ -51,7 +51,7 @@ const About = () => {
                 <Card
                     emoji={Glasses}
                     heading={"Frontend"}
-                    detail={"Html, Css, JavaScript, React"}
+                    detail={"Html, Css, JavaScript, React, Bootstrap"}
                 />
             </motion.div>
             {/* third card */}
@@ -63,7 +63,7 @@ const About = () => {
                 <Card
                     emoji={Humble}
                     heading={"Programmer"}
-                    detail={"C++, Java, C, Python, C#"}
+                    detail={"C++, Java, C, Python, C#, .........."}
                 />
             </motion.div>
             <div className="blur a-blur2" style={{background: "var(--purple)"}}></div>

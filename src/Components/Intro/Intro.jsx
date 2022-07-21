@@ -13,6 +13,7 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { themeContext } from '../../Context';
 import {useContext } from "react";
 import {motion} from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const Intro = () => {
 
@@ -31,7 +32,11 @@ const Intro = () => {
                     experience in Web Designing, CP enthusiastic
                 </span>
             </div>
-            <button className="button i-button"> Hire Me</button>
+            <Link spy={true} to='Contact' smooth={true} activeClass='activeClass'>
+            <button className="button i-button">
+                    Hire Me
+            </button>
+            </Link>
             <div className="i-icons">
                 <a href="https://github.com/rahulkumarcse102">
                 <img src={Github} alt="" />
@@ -55,14 +60,17 @@ const Intro = () => {
             initial={{top: '-4%', left:'74%'}}
             whileInView={{left: '68%'}}
             transition={transition}
-             className='demo' style={{top: '-4%', left: '68%'}}>
+             style={{top: '-4%', left: '68%'}}
+             className='floating-div'
+             >
                 <FloatingDiv image={crown} txt1='Web' txt2='Developer'/>
             </motion.div>
             <motion.div
             initial={{top: '9rem', left:'18rem'}}
             whileInView={{left: '0rem'}}
             transition={transition}
-             style={{top: '18rem', left: '0rem'}}>
+             style={{top: '18rem', left: '0rem'}}
+             className='floating-div'>
                 <FloatingDiv image={thumbup} txt1='CP' txt2='Enthusiastic'/>
             </motion.div>
             {/* blur divs */}

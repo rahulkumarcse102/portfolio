@@ -10,7 +10,7 @@ import {useContext } from "react";
 import {motion} from 'framer-motion';
 
 const Works = () => {
-    const transition = {duration: 1, type : 'spring'}
+    // const transition = {duration: 1, type : 'spring'}
     const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (

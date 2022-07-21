@@ -16,10 +16,10 @@ function App() {
   const darkMode = theme.state.darkMode;
   return (
     <div className="App"
-      style={{
-        background : darkMode ? 'black': '',
-        color : darkMode ? 'white': '',
-      }}>
+       style={{
+         background : darkMode ? 'black': '',
+         color : darkMode ? 'white': '',
+       }}>
       <Navbar/>
       <Intro/>
       <About/>
@@ -30,6 +30,8 @@ function App() {
       <Contact/>
       <Footer/>
     </div>
+    
+
   );
 };
 

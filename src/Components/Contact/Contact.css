@@ -1,5 +1,5 @@
 .contact-form{
-    padding: 0 3rem 0 3rem;
+    padding: 4rem 3rem 0 3rem;
     display: flex;
     height: 80vh;
     margin-top: 4rem;
@@ -54,4 +54,21 @@ textarea{
     color: var(--orange);
     font-size: 2rem;
     font-weight: bold;
+}
+@media screen and (max-width: 480px){
+    .contact-form{
+        align-items: center;
+        flex-direction: column;
+        /* width: 10rem; */
+    }
+    .c-right{
+        align-items: center;
+        flex-direction: column;
+        width: fit-content;
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+    .c-right .user{
+        width:15rem;
+    }
 }

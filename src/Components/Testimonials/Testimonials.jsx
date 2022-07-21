@@ -1,3 +1,5 @@
+//Achievements same as testimonials
+
 import React from 'react'
 import './Testimonials.css'
 import {Swiper,SwiperSlide} from 'swiper/react'
@@ -37,7 +39,7 @@ const Testimonials = () => {
 
 
   return (
-    <div className="t-wrapper">
+    <div className="t-wrapper" id='Acheivements'>
         <div className="t-heading">
             <span>Clients always get </span>
             <span>Exceptional work </span>
