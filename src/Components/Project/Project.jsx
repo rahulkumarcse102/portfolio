@@ -25,17 +25,25 @@ const Project = () => {
         grabCursor={true}
         className='project-slider'
         >
-           <SwiperSlide>
+            <SwiperSlide>
+            <a href="https://leetcode.com/RK_rahul12/" target= "_blank" rel="noreferrer">
                <img src={leetcode} alt="" />
-           </SwiperSlide>
+            </a>
+            </SwiperSlide>
            <SwiperSlide>
+           <a href="https://codeforces.com/profile/rahulkumar12345" target= "_blank" rel="noreferrer">
                <img src={codefores} alt="" />
+            </a>
            </SwiperSlide>
            <SwiperSlide>
+            <a href="https://www.hackerrank.com/rahul9709347233" target= "_blank" rel="noreferrer">
                <img src={hackerrank} alt="" />
+            </a>
            </SwiperSlide>
            <SwiperSlide>
+           <a href="https://www.codechef.com/users/rahul_kumar_12" target= "_blank" rel="noreferrer">
                <img src={codechef} alt="" />
+            </a>
            </SwiperSlide>
         </Swiper>
     </div>

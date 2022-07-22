@@ -44,7 +44,9 @@ const Intro = () => {
                 <a href="https://www.linkedin.com/in/rahul-kumar-57587a200/" target= "_blank" rel="noreferrer">
                 <img src={LinkedIn} alt="" />
                 </a>
+                <a href="https://www.facebook.com/profile.php?id=100043886371903" target= "_blank" rel="noreferrer">
                 <img src={Facebook} alt="" />
+                </a>
             </div>
         </div>
         <div className="i-right">

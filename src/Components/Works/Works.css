@@ -67,11 +67,12 @@
     align-items: center;
     justify-content: center;
     background: white;
+    overflow: hidden;
     box-shadow: var(--smboxShadow);
 }
 
 .w-secCircle>img{
-    transform: scale(0.6);
+    transform: scale(0.2);
 }
 
 .w-backCircle-blue{

@@ -1,10 +1,10 @@
 import React from "react";
 import "./Works.css";
-import cpp from "../../img/c++.PNG";
-import c from "../../img/c.PNG";
-import java from "../../img/java.PNG";
-import html from "../../img/html.PNG";
-import css from "../../img/css.PNG";
+import cpp from "../../img/c++.png";
+import c from "../../img/c.png";
+import java from "../../img/java.png";
+import html from "../../img/html.png";
+import css from "../../img/css.png";
 import { themeContext } from '../../Context';
 import {useContext } from "react";
 import {motion} from 'framer-motion';
