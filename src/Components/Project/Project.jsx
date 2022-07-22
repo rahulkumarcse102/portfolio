@@ -1,10 +1,10 @@
 import React from 'react'
 import './Project.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import leetcode from "../../img/leetcode.PNG";
+import codefores from "../../img/codeforces.PNG";
+import hackerrank from "../../img/hackerrank.PNG";
+import codechef from "../../img/codechef.PNG";
 import 'swiper/css';
 import { themeContext } from '../../Context';
 import {useContext } from "react";
@@ -15,8 +15,8 @@ const Project = () => {
   return (
     <div className="project" id = 'Projects'>
         {/* Recent Projects */}
-        <span style={{color: darkMode ? 'white': ''}}>Recent Projects </span>
-        <span>Portfolio</span>
+        <span style={{color: darkMode ? 'white': ''}}>Coding Profiles </span>
+        <span>DSA and others</span>
 
         {/* Slider */}
         <Swiper 
@@ -26,16 +26,16 @@ const Project = () => {
         className='project-slider'
         >
            <SwiperSlide>
-               <img src={Sidebar} alt="" />
+               <img src={leetcode} alt="" />
            </SwiperSlide>
            <SwiperSlide>
-               <img src={Ecommerce} alt="" />
+               <img src={codefores} alt="" />
            </SwiperSlide>
            <SwiperSlide>
-               <img src={HOC} alt="" />
+               <img src={hackerrank} alt="" />
            </SwiperSlide>
            <SwiperSlide>
-               <img src={MusicApp} alt="" />
+               <img src={codechef} alt="" />
            </SwiperSlide>
         </Swiper>
     </div>

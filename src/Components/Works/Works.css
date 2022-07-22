@@ -5,6 +5,7 @@
     margin-top: 4rem;
 }
 
+
 /* right side */
 .w-right{
     position: relative;
@@ -21,6 +22,7 @@
     background: white;
 }
 
+
 .w-mainCircle>*{
     position: absolute;
 }
@@ -28,26 +30,31 @@
 .w-mainCircle>:nth-child(1){
     top: -3rem;
     left: 6rem;
+    transform: scale(0.5);
 }
 
 .w-mainCircle>:nth-child(2){
     top: 6rem;
     left: -2rem;
+    transform: scale(0.5);
 }
 
 .w-mainCircle>:nth-child(3){
     top: 6rem;
     left: 7rem;
+    transform: scale(0.5);
 }
 
 .w-mainCircle>:nth-child(4){
     top: 6rem;
     left: 16rem;
+    transform: scale(0.5);
 }
 
 .w-mainCircle>:nth-child(5){
     top: 15rem;
     left: 7rem;
+    transform: scale(0.5);
 }
 
 .w-secCircle{

@@ -19,9 +19,11 @@ const About = () => {
         <div className="awesome">
             <span style={{color: darkMode ? 'white': ''}}>My Awesome </span>
             <span>Services</span>
-            <span>This is about me
+            <span><h3>Good problem solving skills
                 <br/>
-                wait likhenge soch k
+                with 3+ years of Experience.
+                <br/>
+                Intrested in DSA</h3>
             </span>
             <a href={Resume} download>
                 <div className="button a-button">Download CV</div>

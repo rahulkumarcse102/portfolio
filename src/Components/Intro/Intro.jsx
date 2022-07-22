@@ -2,10 +2,10 @@ import React from 'react'
 import './Intro.css'
 import Github from '../../img/github.png';
 import LinkedIn from '../../img/linkedin.png';
-import Instagram from '../../img/instagram.png';
+import Facebook from '../../img/Facebook.png';
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import boy2 from '../../img/boy2.png'
+import rahul from '../../img/rahul1.png'
 import thumbup from '../../img/thumbup.png'
 import crown from '../../img/crown.png'
 import glassesimoji from '../../img/glassesimoji.png'
@@ -38,19 +38,19 @@ const Intro = () => {
             </button>
             </Link>
             <div className="i-icons">
-                <a href="https://github.com/rahulkumarcse102">
+                <a href="https://github.com/rahulkumarcse102" target= "_blank" rel="noreferrer">
                 <img src={Github} alt="" />
                 </a>
-                <a href="https://www.linkedin.com/in/rahul-kumar-57587a200/">
+                <a href="https://www.linkedin.com/in/rahul-kumar-57587a200/" target= "_blank" rel="noreferrer">
                 <img src={LinkedIn} alt="" />
                 </a>
-                <img src={Instagram} alt="" />
+                <img src={Facebook} alt="" />
             </div>
         </div>
         <div className="i-right">
             <img src={Vector1} alt="" />
             <img src={Vector2} alt="" />
-            <img src={boy2} alt="" />
+            <img src={rahul} alt="" />
             <motion.img 
             initial={{left: '-36%'}}
             whileInView={{left: '-24%'}}

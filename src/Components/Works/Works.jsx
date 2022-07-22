@@ -1,13 +1,15 @@
 import React from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import cpp from "../../img/c++.PNG";
+import c from "../../img/c.PNG";
+import java from "../../img/java.PNG";
+import html from "../../img/html.PNG";
+import css from "../../img/css.PNG";
 import { themeContext } from '../../Context';
 import {useContext } from "react";
 import {motion} from 'framer-motion';
+import { Link } from 'react-scroll';
+
 
 const Works = () => {
     // const transition = {duration: 1, type : 'spring'}
@@ -16,17 +18,25 @@ const Works = () => {
   return (
     <div className="works">
         <div className="awesome">
-            <span style={{color: darkMode ? 'white': ''}} >Works for All these </span>
-            <span>Brands and Clients</span>
-            <span>This is about me
+            <span style={{color: darkMode ? 'white': ''}} >Works on these</span>
+            <span> Skills and Companies</span>
+            <span><h5>This is about me</h5>
                 <br/>
-                wait likhenge soch k
+                Software Developer Internsip at
                 <br/>
-                kkuch nhi aaya ab tk
+                <h3>Cuebiz Technologies <br/>Private Limited</h3>
                 <br/>
-                thora aur wait kr lo
+                works and some DSA oriented with basics of C#.
+                <br/>
+                Team working Experience
+                <br/>
             </span>
-                <div className="button a-button">Hire Me</div>
+            
+            <Link spy={true} to='Contact' smooth={true} activeClass='activeClass'>
+            <div className="button a-button">
+                    Hire Me
+            </div>
+            </Link>
             
             <div className="blur a-blur1" style={{background: "ABF1FF94"}}></div>
         </div>
@@ -39,19 +49,19 @@ const Works = () => {
             transition={{duration: 3.5, type: 'spring'}}
             className="w-mainCircle">
                 <div className="w-secCircle">
-                    <img src={Upwork} alt="" />
+                    <img src={cpp} alt="" />
                 </div>
                 <div className="w-secCircle">
-                    <img src={Fiverr} alt="" />
+                    <img src={c} alt="" />
                 </div>
                 <div className="w-secCircle">
-                    <img src={Amazon} alt="" />
+                    <img src={java} alt="" />
                 </div>
                 <div className="w-secCircle">
-                    <img src={Shopify} alt="" />
+                    <img src={html} alt="" />
                 </div>
                 <div className="w-secCircle">
-                    <img src={Facebook} alt="" />
+                    <img src={css} alt="" />
                 </div>
                 {/* Background Circles */}
                 <div className="w-backCircle blueCircle"></div>
